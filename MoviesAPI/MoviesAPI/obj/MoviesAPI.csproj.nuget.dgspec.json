@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AngularProyects\\APIS\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
+    "D:\\AngularProyects\\AngularMovies\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {}
   },
   "projects": {
-    "D:\\AngularProyects\\APIS\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
+    "D:\\AngularProyects\\AngularMovies\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AngularProyects\\APIS\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectUniqueName": "D:\\AngularProyects\\AngularMovies\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
         "projectName": "MoviesAPI",
-        "projectPath": "D:\\AngularProyects\\APIS\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+        "projectPath": "D:\\AngularProyects\\AngularMovies\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
         "packagesPath": "C:\\Users\\guillermo.moran\\.nuget\\packages\\",
-        "outputPath": "D:\\AngularProyects\\APIS\\MoviesAPI\\MoviesAPI\\obj\\",
+        "outputPath": "D:\\AngularProyects\\AngularMovies\\MoviesAPI\\MoviesAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guillermo.moran\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

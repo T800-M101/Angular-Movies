@@ -12,6 +12,8 @@ export function parseWebAPIErrors(response:any):string[]{
    if(response.error){
        if(typeof response.error === 'string'){
            result.push(response.error);
+       }else if(Array.isArray(response.error)){
+         response.error.forEach((value:any)  => result.push(value.description));
        }else{
            const mapErrors = response.error.errors.Name;
            //Transfor the Object into an array

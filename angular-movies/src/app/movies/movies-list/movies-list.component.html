@@ -13,17 +13,25 @@
         </p>
 
         <div>
-          <a mat-flat-button color="primary"
-             [routerLink]="'/movies/edit/'+ movie.id"
-             >Edit
-          </a>
 
-          <button mat-flat-button color="warn"
-                  [swal]="{title:'Confirmation', text:'Are you sure you want to delete this movie?',
-                  showCancelButton: true}"
-                  (confirm)="remove(movie.id)">
-                  Delete
-          </button>
+          <app-authorize-view [role]="'admin'">
+            <ng-container authorized>
+              <a mat-flat-button color="primary"
+              [routerLink]="'/movies/edit/'+ movie.id"
+              >Edit
+           </a>
+ 
+           <button mat-flat-button color="warn"
+                   [swal]="{title:'Confirmation', text:'Are you sure you want to delete this movie?',
+                   showCancelButton: true}"
+                   (confirm)="remove(movie.id)">
+                   Delete
+           </button>
+            </ng-container>
+        </app-authorize-view>
+
+
+         
         </div>
         
       </div>    
